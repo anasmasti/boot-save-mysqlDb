@@ -3,7 +3,7 @@ const { generateLogFile } = require("./generateLogFile");
 
 // Save DB every 24hour
 const saveEveryDay = () => {
-  let oneDay = 24 * 60 * 60 * 1000; // 24 hours in seconds
+  let oneDay = (24 * 60 * 60 * 1000) / 2; // 24 hours in seconds
   let buckupDate = new Date(); // Date of backup
 
   saveDb(); // Save backup
